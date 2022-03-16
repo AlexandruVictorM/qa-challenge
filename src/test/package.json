@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.9.12",
+    "@cypress/instrument-cra": "^1.4.0",
+    "cypress": "^9.4.1",
+    "istanbul-lib-coverage": "^3.2.0",
+    "mini-css-extract-plugin": "2.4.5",
+    "nyc": "^15.1.0"
+  }
+}
