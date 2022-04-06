@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef } from "react"; 
 import { useOnCloseModal } from "../hooks/useOnCloseModal";
 import { CloseButton } from "../icons/index";
 
@@ -21,6 +21,7 @@ function Modal({ ship, missionsList }) {
         type="button"
         title="More details"
         aria-label="Open modal with more information"
+        data-cypress={`button-more-details-${name}`}
         onClick={() => setShowModal(true)}
       >
         More details
@@ -43,6 +44,7 @@ function Modal({ ship, missionsList }) {
                   <button
                     className="p-1 ml-auto bg-transparent border-0 float-right text-blue"
                     aria-label="Close modal"
+                    data-cypress={`button-closeModalX`}
                     onClick={() => setShowModal(false)}
                   >
                     <CloseButton />
@@ -94,6 +96,7 @@ function Modal({ ship, missionsList }) {
                     className="py-2 px-7 bg-blue text-white rounded text shadow"
                     aria-label="Close modal"
                     type="button"
+                    data-cypress={`button-closeModal`}
                     onClick={() => setShowModal(false)}
                   >
                     Close

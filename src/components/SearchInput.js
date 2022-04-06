@@ -10,6 +10,7 @@ function SearchInput({ applyFilter }) {
       onChange={applyFilter}
       title="Search by ship name, type or mission name"
       aria-label="Search by ship name, type or mission name"
+      data-cypress={`search-input`}
     />
   );
 }

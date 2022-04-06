@@ -9,6 +9,7 @@ function Header({ applyFilter }) {
           href="/"
           title="Harvey's Spaceships"
           aria-label="Home page"
+          data-cypress={`button-rocket`}
         >
           {"🚀" || "HS"}
         </a>

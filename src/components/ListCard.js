@@ -47,6 +47,7 @@ function ListCard({ ship }) {
             aria-label={`${isSelected ? "Remove from" : "Add to"} favourites`}
             className="ml-auto pr-3 tap-highlight-transparent"
             onClick={onSelected}
+            data-cypress={`favorite-${name}`}
           >
             <span className="text-blue will-change-auto">
               <Heart isSelected={isSelected} />
